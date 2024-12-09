@@ -666,8 +666,12 @@ input[type='checkbox'] {
 /*     Services     */
 /********************/
 .basic-2 {
-	padding-top: 7.75rem;
-	padding-bottom: 5.25rem;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Ensure elements stack vertically */
+    padding-top: 5rem;
+    padding-bottom: 3.25rem;
 }
 
 .basic-2 .h2-heading {
@@ -686,6 +690,19 @@ input[type='checkbox'] {
 	border: 1px solid #cfd7de;
 }
 
+.basic-2 embed {
+	width: 30%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.basic-2 embed:hover {
+	transform: scale(1.05);
+	box-shadow: 0 1rem 2rem rgba(255, 136, 0, 0.6);
+}
+
 .basic-2 .fas,
 .basic-2 .far {
 	margin-bottom: 1.75rem;
@@ -695,6 +712,17 @@ input[type='checkbox'] {
 
 .basic-2 h4 {
 	letter-spacing: 1px;
+}
+
+.basic-2 .download-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.basic-2 .download {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 

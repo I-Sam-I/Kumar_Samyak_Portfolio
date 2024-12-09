@@ -2,7 +2,12 @@
 
 
 (function($) {
-    "use strict"; 
+    "use strict";
+    
+    $.easing.customEasing = function (x, t, b, c, d) {
+        console.log('Custom easing function called'); // Add console log
+        return c * ((t = t / d - 1) * t * t + 1) + b; // custom easing function
+    };
 	
     /* Navbar Scripts */
     // jQuery to collapse the navbar on scroll
@@ -20,10 +25,38 @@
 			var $anchor = $(this);
 			$('html, body').stop().animate({
 				scrollTop: $($anchor.attr('href')).offset().top
-			}, 600, 'easeInOutExpo');
+			}, 800, 'customEasing');
 			event.preventDefault();
 		});
-    });
+
+            // Full-screen toggle for embed element
+            var embedElement = document.querySelector('.basic-2 embed');
+            if (embedElement) {
+                embedElement.addEventListener('click', function() {
+                    if (!document.fullscreenElement) {
+                        if (embedElement.requestFullscreen) {
+                            embedElement.requestFullscreen();
+                        } else if (embedElement.mozRequestFullScreen) { // Firefox
+                            embedElement.mozRequestFullScreen();
+                        } else if (embedElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                            embedElement.webkitRequestFullscreen();
+                        } else if (embedElement.msRequestFullscreen) { // IE/Edge
+                            embedElement.msRequestFullscreen();
+                        }
+                    } else {
+                        if (document.exitFullscreen) {
+                            document.exitFullscreen();
+                        } else if (document.mozCancelFullScreen) { // Firefox
+                            document.mozCancelFullScreen();
+                        } else if (document.webkitExitFullscreen) { // Chrome, Safari and Opera
+                            document.webkitExitFullscreen();
+                        } else if (document.msExitFullscreen) { // IE/Edge
+                            document.msExitFullscreen();
+                        }
+                    }
+                });
+            }
+        });     
 
     // offcanvas script from Bootstrap + added element to close menu on click in small viewport
     $('[data-toggle="offcanvas"], .navbar-nav li a:not(.dropdown-toggle').on('click', function () {
