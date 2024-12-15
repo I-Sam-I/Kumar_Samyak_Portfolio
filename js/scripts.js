@@ -56,6 +56,21 @@
                     }
                 });
             }
+
+            // Expand/Collapse functionality for blog posts
+            const toggleButtons = document.querySelectorAll('.toggle-button');
+
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const cardText = this.previousElementSibling;
+                    cardText.classList.toggle('expanded');
+                    if (cardText.classList.contains('expanded')) {
+                        this.textContent = 'Read Less';
+                    } else {
+                        this.textContent = 'Read More';
+                    }
+                });
+            });
         });     
 
     // offcanvas script from Bootstrap + added element to close menu on click in small viewport
