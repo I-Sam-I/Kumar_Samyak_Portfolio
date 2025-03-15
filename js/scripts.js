@@ -29,33 +29,32 @@
 			event.preventDefault();
 		});
 
-            // Full-screen toggle for embed element
-            var embedElement = document.querySelector('.basic-2 embed');
-            if (embedElement) {
-                embedElement.addEventListener('click', function() {
-                    if (!document.fullscreenElement) {
-                        if (embedElement.requestFullscreen) {
-                            embedElement.requestFullscreen();
-                        } else if (embedElement.mozRequestFullScreen) { // Firefox
-                            embedElement.mozRequestFullScreen();
-                        } else if (embedElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
-                            embedElement.webkitRequestFullscreen();
-                        } else if (embedElement.msRequestFullscreen) { // IE/Edge
-                            embedElement.msRequestFullscreen();
-                        }
-                    } else {
-                        if (document.exitFullscreen) {
-                            document.exitFullscreen();
-                        } else if (document.mozCancelFullScreen) { // Firefox
-                            document.mozCancelFullScreen();
-                        } else if (document.webkitExitFullscreen) { // Chrome, Safari and Opera
-                            document.webkitExitFullscreen();
-                        } else if (document.msExitFullscreen) { // IE/Edge
-                            document.msExitFullscreen();
-                        }
+        var fullscreenElements = document.querySelectorAll('.toggle-fullscreen');
+        fullscreenElements.forEach(function(element) {
+            element.addEventListener('click', function() {
+                if (!document.fullscreenElement) {
+                    if (element.requestFullscreen) {
+                        element.requestFullscreen();
+                    } else if (element.mozRequestFullScreen) { // Firefox
+                        element.mozRequestFullScreen();
+                    } else if (element.webkitRequestFullscreen) { // Chrome, Safari and Opera
+                        element.webkitRequestFullscreen();
+                    } else if (element.msRequestFullscreen) { // IE/Edge
+                        element.msRequestFullscreen();
                     }
-                });
-            }
+                } else {
+                    if (document.exitFullscreen) {
+                        document.exitFullscreen();
+                    } else if (document.mozCancelFullScreen) { // Firefox
+                        document.mozCancelFullScreen();
+                    } else if (document.webkitExitFullscreen) { // Chrome, Safari and Opera
+                        document.webkitExitFullscreen();
+                    } else if (document.msExitFullscreen) { // IE/Edge
+                        document.msExitFullscreen();
+                    }
+                }
+            });
+        });
 
             // Expand/Collapse functionality for blog posts
             const toggleButtons = document.querySelectorAll('.toggle-button');
