@@ -653,13 +653,12 @@ input[type='checkbox'] {
 }
 
 .blog-container .blog .card-text {
-    max-height: 7rem;
+    max-height: 6.901rem; /*shameless 6901 plug*/
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 1s ease;
 }
 
 .blog-container .blog .card-text.expanded {
-    max-height: none;
     overflow: visible;
 }
 
@@ -690,6 +689,7 @@ input[type='checkbox'] {
 /*     Mentor     */
 /********************/
 .mentor {
+	width: 100%;
 	display: flex;
 	justify-content: center; /* Center horizontally */
 	align-items: center; /* Center vertically */
@@ -715,26 +715,34 @@ input[type='checkbox'] {
 }
 
 .mentor .card-body {
-    border-top: 1px solid #999; /* Border at the top of the card body */
+    /* border-top: 1px solid #999; */ /* Border at the top of the card body */
     padding-top: 1rem; /* Padding at the top of the card body */
 }
 
 .mentor .card-title {
+	width: 20%;
     border-bottom: 1px solid #999; /* Border at the bottom of the card title */
     padding-bottom: 0.5rem; /* Padding at the bottom of the card title */
-    margin-bottom: 0.5rem; /* Margin at the bottom of the card title */
+    margin-bottom: 0.15rem; /* Margin at the bottom of the card title */
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .mentor .card-subtitle {
-	border-bottom: 1px solid #999;
+	width: 10%;
 	padding-bottom: .25rem;
 	color: #999;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .mentor .card-text {
+	width: 50%;
     padding: 0.5rem; /* Padding inside the card text */
     border: 1px solid #DDD; /* Border around the card text */
     border-radius: 5px; /* Rounded corners for the card text */
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
