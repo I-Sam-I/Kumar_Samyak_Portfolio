@@ -694,7 +694,7 @@ input[type='checkbox'] {
 	justify-content: center; /* Center horizontally */
 	align-items: center; /* Center vertically */
 	flex-direction: column; /* Ensure elements stack vertically */
-	padding-top: 5rem;
+	padding-top: 3.25rem;
 	padding-bottom: 3.25rem;
 	background-color: #181A1B;
 	color: #E8E6E3;
@@ -705,24 +705,30 @@ input[type='checkbox'] {
 }
 
 .mentor .card-img {
-    width: 150px; /* Adjust the width as needed */
-    height: 150px; /* Adjust the height as needed */
+    width: 250px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
     border-radius: 50%; /* Make the image circular */
-    object-fit: cover; /* Ensure the image covers the entire area */
+    object-fit:cover; /* Ensure the image cover the entire area */
     margin: 0 auto 1rem auto; /* Center the image and add bottom margin */
-    border: 2px solid #F80; /* Border around the image */
+    border: 3px solid #F80; /* Border around the image */
     padding: 0.25rem; /* Padding inside the border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.mentor .card-img:hover {
+    box-shadow: 0 0 1.5rem rgba(255, 136, 0, 0.6); /* Shadow effect on hover */
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
 }
 
 .mentor .card-body {
     /* border-top: 1px solid #999; */ /* Border at the top of the card body */
-    padding-top: 1rem; /* Padding at the top of the card body */
+    padding-top: .5rem; /* Padding at the top of the card body */
 }
 
 .mentor .card-title {
 	width: 20%;
-    border-bottom: 1px solid #999; /* Border at the bottom of the card title */
-    padding-bottom: 0.5rem; /* Padding at the bottom of the card title */
+    border-bottom: 1px solid #F80; /* Border at the bottom of the card title */
+    padding-bottom: 0.15rem; /* Padding at the bottom of the card title */
     margin-bottom: 0.15rem; /* Margin at the bottom of the card title */
 	margin-left: auto;
 	margin-right: auto;
@@ -739,7 +745,7 @@ input[type='checkbox'] {
 .mentor .card-text {
 	width: 50%;
     padding: 0.5rem; /* Padding inside the card text */
-    border: 1px solid #DDD; /* Border around the card text */
+    border: 1px solid #F80; /* Border around the card text */
     border-radius: 5px; /* Rounded corners for the card text */
 	margin-left: auto;
 	margin-right: auto;
