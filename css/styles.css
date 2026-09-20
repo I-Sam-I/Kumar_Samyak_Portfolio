@@ -1414,6 +1414,225 @@ input[type='checkbox'] {
 }
 
 
+/**************************/
+/*     ISM Archive Pages  */
+/**************************/
+.ism-archive-page .navbar {
+	background-color: #181A1B;
+}
+
+.ism-archive-nav {
+	padding-top: 7.5rem;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid rgba(255, 136, 0, 0.35);
+	background-color: #1D2021;
+}
+
+.ism-archive-nav .container,
+.ism-archive-content {
+	max-width: 70rem;
+}
+
+.ism-archive-nav-heading {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 0.5rem 1rem;
+}
+
+.ism-archive-nav-heading p {
+	margin-bottom: 0.5rem;
+}
+
+.ism-archive-nav-heading strong {
+	color: #E8E6E3;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.2rem;
+}
+
+.ism-archive-utility-links,
+.ism-archive-page-links {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 0.6rem;
+}
+
+.ism-archive-utility-links {
+	margin: 0.5rem 0 1.25rem;
+}
+
+.ism-archive-utility-links a,
+.ism-archive-page-links a,
+.ism-archive-year-switch {
+	display: inline-block;
+	padding: 0.55rem 0.85rem;
+	border: 1px solid rgba(255, 136, 0, 0.5);
+	border-radius: 10px;
+	color: #DDD;
+	font-size: 0.85rem;
+	font-weight: 600;
+	line-height: 1.3rem;
+	text-decoration: none;
+}
+
+.ism-archive-utility-links a:hover,
+.ism-archive-page-links a:hover,
+.ism-archive-year-switch:hover,
+.ism-archive-page-links a[aria-current="page"] {
+	border-color: #F80;
+	background-color: #F80;
+	color: #181A1B;
+	text-decoration: none;
+}
+
+.ism-archive-nav-label {
+	margin-bottom: 0.55rem;
+	color: #AAA;
+	font-size: 0.8rem;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.ism-archive-page-links {
+	margin: 0 0 1rem;
+	padding: 0;
+	list-style: none;
+}
+
+.ism-archive-year-switch {
+	border-style: dashed;
+}
+
+.ism-archive-content {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.ism-archive-landing {
+	min-height: 100vh;
+	padding-top: 9rem;
+	padding-bottom: 5rem;
+}
+
+.ism-archive-landing > .container {
+	max-width: 70rem;
+}
+
+.ism-archive-landing .ism-archive-page-header {
+	margin-bottom: 3rem;
+}
+
+.ism-archive-page-header {
+	margin-bottom: 2.5rem;
+	text-align: center;
+}
+
+.ism-archive-page-header h1 {
+	margin-bottom: 0.75rem;
+}
+
+.ism-archive-page-header p:last-child {
+	max-width: 46rem;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+.ism-archive-page #fp,
+.ism-archive-page #fp-research,
+.ism-archive-page #display-board,
+.ism-archive-page #blogs {
+	scroll-margin-top: 5rem;
+}
+
+.ism-archive-page iframe {
+	display: block;
+	width: 100%;
+	height: min(70vh, 44rem);
+	min-height: 28rem;
+	border: 1px solid rgba(255, 136, 0, 0.45);
+	border-radius: 10px;
+	background-color: #FFF;
+}
+
+.ism-document-link {
+	margin-top: 0.65rem;
+	text-align: right;
+}
+
+.ism-document-link a {
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+.ism-document-link .fas {
+	margin-left: 0.3rem;
+	font-size: 0.75rem;
+}
+
+.ism-archive-page video {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-height: 70vh;
+	background-color: #000;
+}
+
+.ism-archive-page .carousel-image {
+	display: block;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	max-height: 70vh;
+	object-fit: contain;
+}
+
+.ism-archive-content.blog-container {
+	display: block;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.ism-archive-page .blog-container .blog {
+	width: 100%;
+	margin: 1rem 0 !important;
+}
+
+.ism-archive-page .blog-container .blog .card-text {
+	max-height: none;
+	overflow: visible;
+}
+
+.ism-archive-page .blog-container .blog .toggle-button {
+	display: none;
+}
+
+.ism-archive-page.archive-js .blog-container .blog .card-text {
+	max-height: 6.901rem;
+	overflow: hidden;
+}
+
+.ism-archive-page.archive-js .blog-container .blog .card-text.expanded {
+	overflow: visible;
+}
+
+.ism-archive-page.archive-js .blog-container .blog .toggle-button {
+	display: inline-block;
+}
+
+.ism-archive-utility-links a:focus-visible,
+.ism-archive-page-links a:focus-visible,
+.ism-archive-year-switch:focus-visible,
+.ism-document-link a:focus-visible,
+.ism-archive-page .toggle-button:focus-visible {
+	outline: 2px solid #F80;
+	outline-offset: 3px;
+}
+
+
 /******************/
 /*     Carousel     */
 /******************/
@@ -1516,6 +1735,28 @@ a:hover.back-to-top {
 
 	.project-detail-section {
 		padding: 3.5rem 0;
+	}
+
+	.ism-archive-nav {
+		padding-top: 6.25rem;
+	}
+
+	.ism-archive-nav-heading {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.ism-archive-content {
+		margin-top: 2.25rem;
+	}
+
+	.ism-archive-landing {
+		padding-top: 7rem;
+	}
+
+	.ism-archive-page iframe {
+		height: 65vh;
+		min-height: 22rem;
 	}
 
 	.system-flow {

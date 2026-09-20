@@ -89,21 +89,49 @@
     // Expand/Collapse functionality for blog posts
     const toggleButtons = document.querySelectorAll(".toggle-button");
 
-    toggleButtons.forEach((button) => {
-      button.addEventListener("click", function () {
-        const cardText = this.previousElementSibling;
+    if (
+      toggleButtons.length &&
+      document.body.classList.contains("ism-archive-page")
+    ) {
+      document.body.classList.add("archive-js");
+    }
 
-        if (cardText.style.maxHeight) {
-          // Collapse the content
-          cardText.style.maxHeight = null;
+    toggleButtons.forEach((button) => {
+      const targetId = button.getAttribute("aria-controls");
+      const cardText = targetId
+        ? document.getElementById(targetId)
+        : button.previousElementSibling;
+
+      if (!cardText) {
+        return;
+      }
+
+      button.addEventListener("click", function () {
+        const isExpanded = this.getAttribute("aria-expanded") === "true";
+
+        if (isExpanded) {
+          cardText.classList.remove("expanded");
+          cardText.style.maxHeight = "";
           this.textContent = "Read More";
+          this.setAttribute("aria-expanded", "false");
         } else {
-          // Expand the content
+          cardText.classList.add("expanded");
           cardText.style.maxHeight = cardText.scrollHeight + "px";
           this.textContent = "Read Less";
+          this.setAttribute("aria-expanded", "true");
         }
       });
     });
+
+    function updateExpandedBlogHeights() {
+      document
+        .querySelectorAll(".collapse-content.expanded")
+        .forEach((cardText) => {
+          cardText.style.maxHeight = cardText.scrollHeight + "px";
+        });
+    }
+
+    window.addEventListener("resize", updateExpandedBlogHeights);
   });
 
   // Close the Bootstrap navigation after an in-page link is selected on small screens.
