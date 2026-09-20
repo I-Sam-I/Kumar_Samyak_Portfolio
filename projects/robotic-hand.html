@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Kumar Samyak's five-finger tendon-driven robotic hand, including its mechanical design, embedded control system, iterations, and ISM development archive.">
+    <meta name="author" content="Kumar Samyak">
+
+    <meta property="og:site_name" content="Kumar Samyak Portfolio">
+    <meta property="og:title" content="Five-Finger Tendon-Driven Robotic Hand | Kumar Samyak">
+    <meta property="og:description" content="A 3D-printable robotic hand with tendon-driven flexion, TPU passive return, and Raspberry Pi control.">
+    <meta property="og:image" content="/images/ism-2/final-product/Hand.jpg">
+    <meta property="og:url" content="https://kumarsamyak.netlify.app/projects/robotic-hand.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Five-Finger Tendon-Driven Robotic Hand | Kumar Samyak</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="/css/fontawesome-all.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+
+    <link rel="icon" href="/images/favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+</head>
+
+<body class="project-detail-body">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Primary navigation">
+        <div class="container">
+            <a class="navbar-brand logo-image" href="/index.html#header">
+                <img src="/images/favicon_io/favicon.svg" alt="Kumar Samyak home">
+            </a>
+            <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavigation">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/index.html#header">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/index.html#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header class="project-detail-hero">
+            <div class="container project-hero-layout">
+                <div>
+                    <p class="project-eyebrow">Robotics &bull; Embedded Systems</p>
+                    <h1>Five-Finger Tendon-Driven Robotic Hand</h1>
+                    <p class="project-lead">A 3D-printable robotic hand with independent tendon-driven fingers, passive TPU return springs, and programmable control from a Raspberry Pi.</p>
+                    <div class="project-actions">
+                        <a class="btn-solid-reg page-scroll" href="#development-archive">Development Archive</a>
+                        <a class="btn-outline-sm" href="/index.html#projects">Back to Projects</a>
+                    </div>
+                </div>
+                <div class="project-cover-frame">
+                    <img src="/images/projects/robotic-hand/cover.jpg" alt="Five-finger tendon-driven robotic hand project cover" onerror="this.onerror=null; this.src='/images/ism-2/final-product/Hand.jpg';">
+                </div>
+            </div>
+        </header>
+
+        <section class="project-metadata" aria-label="Project metadata">
+            <div class="container">
+                <dl class="project-meta-grid">
+                    <div class="project-meta-item"><dt>Role</dt><dd>Designer, fabricator &amp; programmer</dd></div>
+                    <div class="project-meta-item"><dt>Timeline</dt><dd>ISM 1 &amp; ISM 2 development</dd></div>
+                    <div class="project-meta-item"><dt>Status</dt><dd>Functional prototype</dd></div>
+                    <div class="project-meta-item"><dt>Focus</dt><dd>Robotics, CAD &amp; embedded control</dd></div>
+                    <div class="project-meta-item"><dt>Stack</dt><dd>Python, Raspberry Pi, Fusion 360, PCA9685</dd></div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="project-detail-section" aria-labelledby="overview-heading">
+            <div class="container">
+                <div class="project-section-heading">
+                    <p class="project-eyebrow">Overview</p>
+                    <h2 id="overview-heading">Compact actuation around a printable hand</h2>
+                    <p>The hand uses one MG90S servo per finger. Printed spools wind braided tendon line to create active flexion, while flexible TPU elements return each finger to extension when tendon tension is released.</p>
+                    <p>The mechanical design, tendon routing, and electronics were arranged around the palm and wrist so that the five fingers can be controlled independently or combined into programmed grasps and poses.</p>
+                </div>
+                <div class="project-content-grid">
+                    <article class="project-detail-card">
+                        <h3>Finger Mechanism</h3>
+                        <p>Braided line routes through the printed finger structure and transfers rotation from each servo spool into coordinated joint flexion.</p>
+                    </article>
+                    <article class="project-detail-card">
+                        <h3>Passive Return</h3>
+                        <p>TPU provides the restoring force for extension, reducing the number of active tendons while creating a direct tradeoff between return strength and required servo torque.</p>
+                    </article>
+                    <article class="project-detail-card">
+                        <h3>Embedded Control</h3>
+                        <p>A Raspberry Pi runs Python commands through a PCA9685 PWM controller to drive five MG90S servos independently.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-detail-section section-dark" aria-labelledby="system-heading">
+            <div class="container">
+                <div class="project-section-heading">
+                    <p class="project-eyebrow">System Diagram</p>
+                    <h2 id="system-heading">Control and actuation path</h2>
+                </div>
+                <div class="system-flow" aria-label="Robotic hand active flexion control flow">
+                    <div class="system-node">Raspberry Pi</div><span class="system-arrow" aria-hidden="true">&rarr;</span>
+                    <div class="system-node">PCA9685 PWM Driver</div><span class="system-arrow" aria-hidden="true">&rarr;</span>
+                    <div class="system-node">5&times; MG90S Servos</div><span class="system-arrow" aria-hidden="true">&rarr;</span>
+                    <div class="system-node">Printed Spools</div><span class="system-arrow" aria-hidden="true">&rarr;</span>
+                    <div class="system-node">Braided Tendons</div><span class="system-arrow" aria-hidden="true">&rarr;</span>
+                    <div class="system-node">Finger Flexion</div>
+                </div>
+                <div class="system-flow mt-3" aria-label="Robotic hand passive extension flow">
+                    <div class="system-node">Released Tendon Tension</div><span class="system-arrow" aria-hidden="true">&rarr;</span>
+                    <div class="system-node">TPU Return Elements</div><span class="system-arrow" aria-hidden="true">&rarr;</span>
+                    <div class="system-node">Passive Finger Extension</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-detail-section" aria-labelledby="iteration-heading">
+            <div class="container">
+                <div class="project-section-heading">
+                    <p class="project-eyebrow">Engineering Decisions &amp; Iteration</p>
+                    <h2 id="iteration-heading">Moving from linkage-driven to tendon-driven motion</h2>
+                </div>
+                <div class="project-content-grid">
+                    <article class="project-detail-card">
+                        <h3>Mechanism Change</h3>
+                        <p>An early four-bar approach across the MCP, PIP, and DIP joints did not produce the desired curling motion. The design shifted to tendon actuation for more natural multi-joint flexion.</p>
+                    </article>
+                    <article class="project-detail-card">
+                        <h3>TPU Testing</h3>
+                        <p>TPU 95A and 85A were evaluated as passive return materials. Softer return elements improved compliance, but the design still had to extend reliably without exceeding servo torque.</p>
+                    </article>
+                    <article class="project-detail-card">
+                        <h3>System Integration</h3>
+                        <p>Spool diameter, tendon routing, TPU geometry, mechanical clearances, and electronics placement were iterated together because each affected available travel and load.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-detail-section section-dark" aria-labelledby="media-heading">
+            <div class="container">
+                <div class="project-section-heading">
+                    <p class="project-eyebrow">Media</p>
+                    <h2 id="media-heading">Prototype, electronics, and CAD</h2>
+                </div>
+                <div class="project-gallery">
+                    <figure>
+                        <img src="/images/projects/robotic-hand/gallery-01.jpg" alt="Completed tendon-driven robotic hand prototype" loading="lazy" onerror="this.onerror=null; this.src='/images/ism-2/final-product/Hand.jpg';">
+                        <figcaption>Five-finger physical prototype</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/images/projects/robotic-hand/gallery-02.jpg" alt="Robotic hand servo and control electronics" loading="lazy" onerror="this.onerror=null; this.src='/images/ism-2/final-product/Electrical.jpg';">
+                        <figcaption>Servo and control electronics</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/images/projects/robotic-hand/gallery-03.jpg" alt="Robotic hand CAD assembly" loading="lazy" onerror="this.onerror=null; this.src='/images/ism-2/original-work/Robotic%20Hand%20Home%20View.png';">
+                        <figcaption>CAD assembly and packaging</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-detail-section" aria-labelledby="result-heading">
+            <div class="container">
+                <div class="project-status-callout">
+                    <p class="project-eyebrow">Result</p>
+                    <h2 id="result-heading">Functional tendon-driven five-finger prototype</h2>
+                    <p>The completed prototype demonstrates active flexion and passive extension across five independently controlled fingers. It operates with external power.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="development-archive" class="project-detail-section section-dark" aria-labelledby="archive-heading">
+            <div class="container">
+                <div class="project-section-heading">
+                    <p class="project-eyebrow">Development Archive</p>
+                    <h2 id="archive-heading">ISM research and project documentation</h2>
+                    <p>The original ISM pages remain unchanged and document the research, interviews, design work, physical build, and development process behind the project.</p>
+                </div>
+                <div class="archive-link-grid">
+                    <article class="archive-link-group">
+                        <h3>Final Physical Hand &mdash; ISM 2</h3>
+                        <ul>
+                            <li><a href="/final-product.html">Final Product</a></li>
+                            <li><a href="/original-work.html">Original Work</a></li>
+                            <li><a href="/research-articles.html">Research Articles</a></li>
+                            <li><a href="/research-interviews.html">Research Interviews</a></li>
+                            <li><a href="/blogs.html">Development Blogs</a></li>
+                        </ul>
+                    </article>
+                    <article class="archive-link-group">
+                        <h3>Early Design Archive &mdash; ISM 1</h3>
+                        <ul>
+                            <li><a href="/ism-1/final-product.html">Final Product</a></li>
+                            <li><a href="/ism-1/original-work.html">Original Work</a></li>
+                            <li><a href="/ism-1/research-articles.html">Research Articles</a></li>
+                            <li><a href="/ism-1/research-interviews.html">Research Interviews</a></li>
+                            <li><a href="/ism-1/blogs.html">Development Blogs</a></li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="project-page-footer">
+        <div class="container">
+            <a class="btn-outline-reg" href="/index.html#projects"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to All Projects</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+
+</html>

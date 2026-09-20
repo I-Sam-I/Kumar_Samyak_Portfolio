@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Gym Bro is Kumar Samyak's browser-based computer vision workout assistant for real-time pose analysis and repetition counting.">
+    <meta name="author" content="Kumar Samyak">
+
+    <meta property="og:site_name" content="Kumar Samyak Portfolio">
+    <meta property="og:title" content="Gym Bro | Kumar Samyak">
+    <meta property="og:description" content="A local, browser-based computer vision workout assistant built with MediaPipe and JavaScript.">
+    <meta property="og:image" content="/images/favicon_io/favicon.svg">
+    <meta property="og:url" content="https://kumarsamyak.netlify.app/projects/gym-bro.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Gym Bro | Kumar Samyak</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="/css/fontawesome-all.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
+
+    <link rel="icon" href="/images/favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+</head>
+
+<body class="project-detail-body">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Primary navigation">
+        <div class="container">
+            <a class="navbar-brand logo-image" href="/index.html#header">
+                <img src="/images/favicon_io/favicon.svg" alt="Kumar Samyak home">
+            </a>
+            <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavigation">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/index.html#header">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/index.html#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header class="project-detail-hero">
+            <div class="container project-hero-layout">
+                <div>
+                    <p class="project-eyebrow">Computer Vision &bull; Current Project</p>
+                    <h1>Gym Bro</h1>
+                    <p class="project-lead">A browser-based workout assistant that uses real-time pose tracking and motion analysis to count exercise repetitions without sending camera data to a server.</p>
+                    <div class="project-actions">
+                        <a class="btn-solid-reg external-link" href="https://github.com/I-Sam-I/gym-bro" target="_blank" rel="noopener noreferrer">View on GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="visually-hidden"> (opens in a new tab)</span></a>
+                        <a class="btn-outline-sm" href="/index.html#projects">Back to Projects</a>
+                    </div>
+                </div>
+                <div class="project-cover-frame">
+                    <img src="/images/projects/gym-bro/cover.jpg" alt="Gym Bro project cover" onerror="this.onerror=null; this.src='/images/default-pic.png'; this.classList.add('project-placeholder');">
+                </div>
+            </div>
+        </header>
+
+        <section class="project-metadata" aria-label="Project metadata">
+            <div class="container">
+                <dl class="project-meta-grid">
+                    <div class="project-meta-item"><dt>Role</dt><dd>Developer</dd></div>
+                    <div class="project-meta-item"><dt>Timeline</dt><dd>August 2026 &ndash; Present</dd></div>
+                    <div class="project-meta-item"><dt>Status</dt><dd>Active development</dd></div>
+                    <div class="project-meta-item"><dt>Focus</dt><dd>Computer vision &amp; exercise analysis</dd></div>
+                    <div class="project-meta-item"><dt>Stack</dt><dd>Vanilla JavaScript, Vite, MediaPipe, Canvas</dd></div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="project-detail-section" aria-labelledby="overview-heading">
+            <div class="container">
+                <div class="project-section-heading">
+                    <p class="project-eyebrow">Overview</p>
+                    <h2 id="overview-heading">Real-time feedback in the browser</h2>
+                    <p>Built with vanilla JavaScript and Vite, Gym Bro uses the webcam through <code>getUserMedia</code> and MediaPipe Tasks Vision's Pose Landmarker to follow a user's movement. The current implementation focuses on side-view bicep curls and performs inference locally in the browser.</p>
+                </div>
+                <div class="project-content-grid">
+                    <article class="project-detail-card">
+                        <h3>Pose Input</h3>
+                        <p>The webcam feed is passed to Pose Landmarker, then pose landmarks and the live skeleton overlay are rendered through the Canvas API.</p>
+                    </article>
+                    <article class="project-detail-card">
+                        <h3>Motion Analysis</h3>
+                        <p>The pipeline selects the visible arm, rejects low-confidence landmarks, and calculates the elbow angle from shoulder, elbow, and wrist positions.</p>
+                    </article>
+                    <article class="project-detail-card">
+                        <h3>Repetition State</h3>
+                        <p>Smoothing reduces landmark jitter. A movement state machine counts a repetition only after the arm completes the required extension-to-flexion transition.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-detail-section section-dark" aria-labelledby="pipeline-heading">
+            <div class="container">
+                <div class="project-section-heading">
+                    <p class="project-eyebrow">System Diagram</p>
+                    <h2 id="pipeline-heading">Pose-to-repetition pipeline</h2>
+                </div>
+                <div class="system-flow" aria-label="Webcam to repetition counter data flow">
+                    <div class="system-node">Webcam</div><span class="system-arrow" aria-hidden="true">&rarr;</span>
+                    <div class="system-node">MediaPipe Pose Landmarker</div><span class="system-arrow" aria-hidden="true">&rarr;</span>
+                    <div class="system-node">Pose Landmarks</div><span class="system-arrow" aria-hidden="true">&rarr;</span>
+                    <div class="system-node">Confidence &amp; Arm Selection</div><span class="system-arrow" aria-hidden="true">&rarr;</span>
+                    <div class="system-node">Elbow Angle</div><span class="system-arrow" aria-hidden="true">&rarr;</span>
+                    <div class="system-node">Movement State Machine</div><span class="system-arrow" aria-hidden="true">&rarr;</span>
+                    <div class="system-node">Rep Counter</div>
+                </div>
+                <p class="system-flow-caption">Camera frames remain on the user's device throughout this processing path.</p>
+            </div>
+        </section>
+
+        <section class="project-detail-section" aria-labelledby="decisions-heading">
+            <div class="container">
+                <div class="project-section-heading">
+                    <p class="project-eyebrow">Engineering Decisions</p>
+                    <h2 id="decisions-heading">Designing for usable movement signals</h2>
+                </div>
+                <div class="project-content-grid">
+                    <article class="project-detail-card">
+                        <h3>Local-first Processing</h3>
+                        <p>Running pose estimation in the browser keeps the interaction responsive and avoids uploading a live camera stream.</p>
+                    </article>
+                    <article class="project-detail-card">
+                        <h3>Side-view Geometry</h3>
+                        <p>The initial exercise is constrained to a side view so the elbow angle provides a clearer signal and the more visible arm can be selected reliably.</p>
+                    </article>
+                    <article class="project-detail-card">
+                        <h3>Transition-based Counting</h3>
+                        <p>Confidence filtering, smoothing, and explicit movement states reduce false counts from noisy landmarks or small movements near an angle threshold.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-detail-section section-dark" aria-labelledby="media-heading">
+            <div class="container">
+                <div class="project-section-heading">
+                    <p class="project-eyebrow">Media</p>
+                    <h2 id="media-heading">Interface and pose analysis</h2>
+                </div>
+                <div class="project-gallery">
+                    <figure>
+                        <img src="/images/projects/gym-bro/gallery-01.jpg" alt="Gym Bro interface view" loading="lazy" onerror="this.onerror=null; this.src='/images/default-pic.png'; this.classList.add('project-placeholder');">
+                        <figcaption>Workout assistant interface</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/images/projects/gym-bro/gallery-02.jpg" alt="Gym Bro pose landmark analysis view" loading="lazy" onerror="this.onerror=null; this.src='/images/default-pic.png'; this.classList.add('project-placeholder');">
+                        <figcaption>Pose landmarks and joint-angle analysis</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/images/projects/gym-bro/gallery-03.jpg" alt="Gym Bro repetition counter view" loading="lazy" onerror="this.onerror=null; this.src='/images/default-pic.png'; this.classList.add('project-placeholder');">
+                        <figcaption>Movement state and repetition count</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-detail-section" aria-labelledby="status-heading">
+            <div class="container">
+                <div class="project-status-callout">
+                    <p class="project-eyebrow">Result &amp; Status</p>
+                    <h2 id="status-heading">Real-time pose analysis runs locally in the browser.</h2>
+                    <p>The current build supports side-view bicep curls. Additional exercises, set tracking, form feedback, and workout analytics are planned and are not yet part of the completed implementation.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="project-page-footer">
+        <div class="container">
+            <a class="btn-outline-reg" href="/index.html#projects"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to All Projects</a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+
+</html>
