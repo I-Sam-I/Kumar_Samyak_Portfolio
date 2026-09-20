@@ -4,30 +4,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Kumar Samyak's FISD IHS ISM 2 Digital Portfolio">
+
+    <meta name="description" content="Kumar Samyak's engineering, software, and robotics portfolio">
     <meta name="author" content="Kumar Samyak">
 
-    <!-- OG Meta Tags to improve the way the post looks when sharing on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="Kumar Samyak Portfolio (ISM 2)" /> <!-- website name -->
-	<meta property="og:site" content="https://kumarsamyak.netlify.app/" /> <!-- website link -->
-	<meta property="og:title" content="Kumar Samyak Portfolio"/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="Kumar Samyak's FISD IHS ISM 2 Digital Portfolio" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="/images/favicon_io/favicon.svg" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="https://kumarsamyak.netlify.app/" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+    <meta property="og:site_name" content="Kumar Samyak Portfolio">
+    <meta property="og:site" content="https://kumarsamyak.netlify.app/">
+    <meta property="og:title" content="Kumar Samyak | Engineering & Software Portfolio">
+    <meta property="og:description" content="Robotics, embedded systems, computer vision, and software projects by Kumar Samyak.">
+    <meta property="og:image" content="/images/favicon_io/favicon.svg">
+    <meta property="og:url" content="https://kumarsamyak.netlify.app/">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <!-- Webpage Title -->
-    <title>Kumar Samyak Portfolio (ISM 2)</title>
-    
-    <!-- Styles -->
+    <title>Kumar Samyak | Engineering & Software Portfolio</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="/css/fontawesome-all.css" rel="stylesheet">
     <link href="/css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <!-- <link rel="icon" href="images/favicon.png"> -->
+
     <link rel="icon" href="/images/favicon_io/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
@@ -35,367 +29,346 @@
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Primary navigation">
         <div class="container">
-            
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="#"><img src="/images/favicon_io/favicon.svg" alt="alternative"></a>
+            <a class="navbar-brand logo-image page-scroll" href="#header">
+                <img src="/images/favicon_io/favicon.svg" alt="Kumar Samyak home">
+            </a>
 
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#header">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about-me">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#resume">Résumé</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about-ism">About ISM</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#blogs">Blogs</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle page-scroll" href="#research" id="dropdown01" aria-haspopup="true" aria-expanded="false">Research</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item page-scroll" href="/research-articles.html">Research Articles</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item page-scroll" href="/research-interviews.html">Research Interviews</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#mentor">Mentor</a>
-                    </li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle page-scroll" href="#projects" id="dropdown02" aria-haspopup="true" aria-expanded="false">Projects</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                            <li><a class="dropdown-item page-scroll" href="/original-work.html">Original Work</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item page-scroll" href="/final-product.html">Final Product</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle page-scroll" href="#ism-1" id="dropdown03" aria-haspopup="true" aria-expanded="false">ISM 1</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                            <li><a class="dropdown-item page-scroll" href="/ism-1/original-work.html">Original Work</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item page-scroll" href="/ism-1/final-product.html">Final Product</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item page-scroll" href="/ism-1/research-articles.html">Research Articles</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item page-scroll" href="/ism-1/research-interviews.html">Research Interviews</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item page-scroll" href="/ism-1/blogs.html">Blogs</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contact Me</a>
-                    </li>
+            <div class="collapse navbar-collapse" id="mainNavigation">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link page-scroll" href="#header">Home</a></li>
+                    <li class="nav-item"><a class="nav-link page-scroll" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link page-scroll" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link page-scroll" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link page-scroll" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link page-scroll" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link page-scroll" href="#contact">Contact</a></li>
                 </ul>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+            </div>
+        </div>
+    </nav>
 
-    <!-- Header -->
     <header id="header" class="header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                     <div class="text-container">
                         <h1 class="h1-large">Kumar Samyak</h1>
-                        <p class="p-large">Robotics • Artificial Intelligence</p>
-                        <a class="btn-solid-lg page-scroll" href="#about-me">About Me</a>
-                        <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contact Me</a>
-                        
-                        <h2 class="h2-large">"In the field of robotics, our imagination is the only limit."</h3>
-                        <h3 class="h3-large">- Bob Reiner</h2>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
+                        <p class="p-large">Computer Science at UIUC &bull; Intended Electrical Engineering Minor</p>
+                        <h2 class="h2-large">Robotics &bull; Embedded Systems &bull; Computer Vision &bull; Software</h2>
+                        <a class="btn-solid-lg page-scroll" href="#projects">View Projects</a>
+                        <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user" aria-hidden="true"></i>Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <!-- About Me -->
-    <div id="about-me" class="basic-1">
+    <section id="about" class="basic-1 page-section" aria-labelledby="about-heading">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-4">
                     <div class="text-container first">
-                        <h2>Hi there I'm Kumar,</h2>
-                        <p>I am a motivated high school senior at Independence High School, Frisco ISD, TX with a passion for computer science, engineering, and robotics. </p>
-                    </div> <!-- end of text-container -->
-                    <div class="social-container">
+                        <h2 id="about-heading">Hi, I'm Kumar.</h2>
+                        <p>I am a Computer Science student at the University of Illinois Urbana-Champaign, where I intend to minor in Electrical Engineering.</p>
+                    </div>
+                    <div class="social-container" aria-label="Professional links">
                         <span class="fa-stack">
-                            <a href="https://www.linkedin.com/in/kumar-samyak/">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin fa-stack-1x"></i>
+                            <a href="https://www.linkedin.com/in/kumar-samyak/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)">
+                                <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                                <i class="fab fa-linkedin fa-stack-1x" aria-hidden="true"></i>
                             </a>
                         </span>
-
                         <span class="fa-stack">
-                            <a href="mailto:kumar_samyak@outlook.com">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-envelope fa-stack-1x"></i>
+                            <a href="https://github.com/I-Sam-I" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in a new tab)">
+                                <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                                <i class="fab fa-github fa-stack-1x" aria-hidden="true"></i>
                             </a>
                         </span>
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
+                        <span class="fa-stack">
+                            <a href="mailto:ksamyak2@illinois.edu" aria-label="Email Kumar">
+                                <i class="fas fa-circle fa-stack-2x" aria-hidden="true"></i>
+                                <i class="fas fa-envelope fa-stack-1x" aria-hidden="true"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
                 <div class="col-lg-4">
                     <div class="text-container second">
-                        <p>As an Independent Study and Mentorship (ISM) student, I aim to thoughtfully design and develop a product that benefits various industries and the general public by employing computer science and innovative technology. I am committed to upholding high standards of professionalism as I expand my network via engaging with and learning from professionals through interviews and networking opportunities.</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
+                        <p>I build systems that connect software with the physical world. My work spans robot control, embedded hardware, computer vision, machine learning, and web-based tools, with an emphasis on iterative engineering and practical results.</p>
+                    </div>
+                </div>
                 <div class="col-lg-4">
                     <div class="text-container third">
-                        <img class="img-fluid me-img" src="images/me.jpg" alt="Picture of Kumar Samyak">
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of about -->
-
-    <!-- Section Divider -->
-    <div id="resume" class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr class="section-divider">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    <!-- end of section divider -->
-
-    <!-- Resume -->
-    <div class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Résumé</h2>
-                    <embed class="toggle-fullscreen" src="documents/Resume.png" type="image/png"/>
-                    <div class="download-container">
-                        <a class="btn-solid-lg download" href="documents/Resume.pdf" download>Download (PDF)</a>
+                        <img class="img-fluid me-img" src="/images/me.jpg" alt="Kumar Samyak">
                     </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of resume -->
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Section Divider -->
-    <div id="about-ism" class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr class="section-divider">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    <!-- end of section divider -->
+    <div class="container" aria-hidden="true"><hr class="section-divider"></div>
 
-    <!-- About ISM -->
-    <div class="basic-2">
+    <section id="projects" class="basic-2 page-section" aria-labelledby="projects-heading">
+        <div class="container">
+            <h2 id="projects-heading" class="h2-heading">Projects</h2>
+            <p class="section-intro">Selected work across robotics, computer vision, embedded systems, and software.</p>
+
+            <div class="row g-4 project-grid">
+                <div class="col-md-6 col-xl-4 d-flex">
+                    <article class="card project-card w-100">
+                        <div class="project-media">
+                            <img src="/images/default-pic.png" class="card-img-top project-card-image project-placeholder" alt="Placeholder for a Gym Bro project screenshot" data-placeholder-path="/images/projects/gym-bro.jpg">
+                            <span class="project-image-label">Image coming soon</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="project-eyebrow">Computer Vision &bull; Current</p>
+                            <h3 class="card-title">Gym Bro</h3>
+                            <p class="project-subtitle">Computer Vision Workout Assistant</p>
+                            <p class="card-text">A browser-based workout assistant that uses real-time local pose tracking, elbow-angle analysis, and a movement state machine to count side-view bicep curls.</p>
+                            <ul class="tech-list" aria-label="Technologies">
+                                <li>JavaScript</li><li>MediaPipe</li><li>Canvas API</li><li>Vite</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="btn-outline-sm external-link" href="https://github.com/I-Sam-I/gym-bro" target="_blank" rel="noopener noreferrer">View on GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="visually-hidden"> (opens in a new tab)</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4 d-flex">
+                    <article class="card project-card w-100 project-card-featured">
+                        <div class="project-media">
+                            <img src="/images/robotic-hand.jpg" class="card-img-top project-card-image" alt="Five-finger tendon-driven robotic hand">
+                        </div>
+                        <div class="card-body">
+                            <p class="project-eyebrow">Robotics &bull; Embedded Systems</p>
+                            <h3 class="card-title">Five-Finger Tendon-Driven Robotic Hand</h3>
+                            <p class="card-text">A fully 3D-printable robotic hand with embedded servos, custom tendon spools, TPU return springs, Raspberry Pi control, and programmable grasps and poses.</p>
+                            <ul class="tech-list" aria-label="Technologies">
+                                <li>Python</li><li>Raspberry Pi</li><li>Fusion 360</li><li>PCA9685</li>
+                            </ul>
+                            <details class="project-documents">
+                                <summary>View project documentation</summary>
+                                <div class="documentation-group">
+                                    <h4>Final physical hand &mdash; ISM 2</h4>
+                                    <a href="/final-product.html">Final Product</a>
+                                    <a href="/original-work.html">Original Work</a>
+                                    <a href="/research-articles.html">Research Articles</a>
+                                    <a href="/research-interviews.html">Research Interviews</a>
+                                    <a href="/blogs.html">Development Blogs</a>
+                                </div>
+                                <div class="documentation-group">
+                                    <h4>Early design archive &mdash; ISM 1</h4>
+                                    <a href="/ism-1/final-product.html">Final Product</a>
+                                    <a href="/ism-1/original-work.html">Original Work</a>
+                                    <a href="/ism-1/research-articles.html">Research Articles</a>
+                                    <a href="/ism-1/research-interviews.html">Research Interviews</a>
+                                    <a href="/ism-1/blogs.html">Development Blogs</a>
+                                </div>
+                            </details>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4 d-flex">
+                    <article class="card project-card w-100">
+                        <div class="project-media">
+                            <img src="/images/default-pic.png" class="card-img-top project-card-image project-placeholder" alt="Placeholder for an FRC Team 6901 robot photograph" data-placeholder-path="/images/projects/frc-6901.jpg">
+                            <span class="project-image-label">Image coming soon</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="project-eyebrow">Competitive Robotics</p>
+                            <h3 class="card-title">FRC Team 6901 / Knights Robotics</h3>
+                            <p class="card-text">Java robot code for field-centric swerve drive, odometry, PID control, and vision-based autonomous routines, alongside leadership of a multidisciplinary team of approximately 50 students.</p>
+                            <ul class="tech-list" aria-label="Technologies">
+                                <li>Java</li><li>WPILib</li><li>PhotonVision</li><li>CAN</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="btn-outline-sm external-link" href="https://knights6901.org/" target="_blank" rel="noopener noreferrer">Team Website <i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="visually-hidden"> (opens in a new tab)</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4 d-flex">
+                    <article class="card project-card w-100">
+                        <div class="project-media">
+                            <img src="/images/default-pic.png" class="card-img-top project-card-image project-placeholder" alt="Placeholder for a handwritten character recognition project screenshot" data-placeholder-path="/images/projects/handwritten-character-recognition.jpg">
+                            <span class="project-image-label">Image coming soon</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="project-eyebrow">Machine Learning &bull; UT Dallas</p>
+                            <h3 class="card-title">Handwritten Character Recognition</h3>
+                            <p class="card-text">A convolutional neural network built and evaluated to classify handwritten letters and digits, then presented to professors and peers at the program showcase.</p>
+                            <ul class="tech-list" aria-label="Technologies">
+                                <li>Python</li><li>TensorFlow</li><li>CNNs</li><li>Data Analysis</li>
+                            </ul>
+                            <div class="project-links">
+                                <a class="btn-outline-sm external-link" href="https://github.com/I-Sam-I/Handwritten-Character-Recognition" target="_blank" rel="noopener noreferrer">View on GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="visually-hidden"> (opens in a new tab)</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4 d-flex">
+                    <article class="card project-card w-100">
+                        <div class="project-media">
+                            <img src="/images/default-pic.png" class="card-img-top project-card-image project-placeholder" alt="Placeholder for a PID line-following robot photograph" data-placeholder-path="/images/projects/pid-line-following-robot.jpg">
+                            <span class="project-image-label">Image coming soon</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="project-eyebrow">Embedded Robotics &bull; UT Austin</p>
+                            <h3 class="card-title">PID Line-Following Robot</h3>
+                            <p class="card-text">A soldered and programmed C++ robot with calibrated sensors, tuned motors, and optimized PID control that recorded the fastest time in the internal competition.</p>
+                            <ul class="tech-list" aria-label="Technologies">
+                                <li>C++</li><li>PID Control</li><li>Sensors</li><li>Soldering</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4 d-flex">
+                    <article class="card project-card w-100">
+                        <div class="project-media">
+                            <img src="/images/default-pic.png" class="card-img-top project-card-image project-placeholder" alt="Placeholder for the Academic Empowerment Project bot" data-placeholder-path="/images/projects/academic-empowerment-bot.jpg">
+                            <span class="project-image-label">Image coming soon</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="project-eyebrow">Software &bull; Education</p>
+                            <h3 class="card-title">Academic Empowerment Project</h3>
+                            <p class="project-subtitle">Discord / Class Management Bot</p>
+                            <p class="card-text">A Python Discord bot that helped teachers organize courses, manage registrations, distribute syllabi, and coordinate schedules through Google Calendar.</p>
+                            <ul class="tech-list" aria-label="Technologies">
+                                <li>Python</li><li>Discord API</li><li>Google Calendar API</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <aside class="archive-card mt-5" aria-labelledby="earlier-work-heading">
+                <div>
+                    <p class="project-eyebrow">External Archive</p>
+                    <h3 id="earlier-work-heading">High School Engineering Projects / PLTW Engineering Portfolio</h3>
+                    <p>Earlier IED, POE, Aerospace Engineering, and Digital Electronics work remains available in its original portfolio.</p>
+                </div>
+                <a class="btn-outline-reg external-link flex-shrink-0" href="https://sites.google.com/k12.friscoisd.org/pltw--portfolio/home" target="_blank" rel="noopener noreferrer">Visit External Portfolio <i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="visually-hidden"> (opens in a new tab)</span></a>
+            </aside>
+
+            <details class="ism-archive-context mt-4">
+                <summary>About the robotic hand's ISM archive and mentorship</summary>
+                <div class="ism-archive-body">
+                    <h3>Independent Study and Mentorship</h3>
+                    <p>Frisco ISD's Independent Study and Mentorship program is a program for which students must apply, interview, and be recommended during their junior and/or senior year. Gifted and high achieving students focus their study on a topic or career of their choice. They develop a research portfolio that has a collection of resources including interviews and observations with people who work in their chosen field or topic of study.</p>
+                    <p>Students work on time management, communication, research, goal setting, various soft skills, and presentation skills. During the spring semester, students work with mentors at their mentor's place of business to gain "real world" experience and also to create an advanced product related to their topic. Students progressively give longer speech presentations and will give a formal presentation of their product and mentorship in May. Students leave the ISM experience knowing more about their chosen profession and whether or not that profession is the life and career path they desire to choose as they prepare to enter college.</p>
+                    <p>For more information, visit the <a class="custom-link external-link" href="https://www.friscoisd.org/departments/independent-study-mentorship/home" target="_blank" rel="noopener noreferrer">Frisco ISD ISM website <i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
+
+                    <div class="mentor-inline">
+                        <img src="/images/Dawud Hussain Rahmati.png" alt="Dawud Hussain Rahmati">
+                        <div>
+                            <h3>Dawud Hussain Rahmati</h3>
+                            <p class="project-eyebrow">Robotic Hand Project Mentor</p>
+                            <p>Dawud Rahmati is a college student at the University of New South Wales (Sydney) studying Electrical Engineering. I met him through my robotics club, as he is our virtual mentor on the business and outreach aspects of the team. He is a wonderful mentor for me because he is very knowledgeable about robotics and has much experience in the surrounding fields, especially electrical engineering. I appreciate the time and effort he has taken to guide me through my research and development for my robotic hand.</p>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <div class="container" aria-hidden="true"><hr class="section-divider"></div>
+
+    <section id="experience" class="basic-2 page-section" aria-labelledby="experience-heading">
+        <div class="container">
+            <h2 id="experience-heading" class="h2-heading">Experience</h2>
+            <p class="section-intro">Leadership and technical experience spanning robotics, machine learning, embedded control, and education.</p>
+            <div class="row g-4">
+                <div class="col-lg-6 d-flex">
+                    <article class="experience-card w-100">
+                        <div class="experience-heading">
+                            <div><h3>Knights Robotics &mdash; FRC Team 6901</h3><p>Co-President &bull; Programming Lead</p></div>
+                            <time>Aug 2022 &ndash; May 2026</time>
+                        </div>
+                        <p>Led multidisciplinary subteams and mentored programmers while developing competition robot software. Helped the team earn two Texas State Championship qualifications and multiple judged awards.</p>
+                    </article>
+                </div>
+                <div class="col-lg-6 d-flex">
+                    <article class="experience-card w-100">
+                        <div class="experience-heading">
+                            <div><h3>UT Austin Robotics Program</h3><p>Robotics Internship</p></div>
+                            <time>June 2025</time>
+                        </div>
+                        <p>Built and tuned a C++ PID line-following robot that won first place with the fastest internal competition time.</p>
+                    </article>
+                </div>
+                <div class="col-lg-6 d-flex">
+                    <article class="experience-card w-100">
+                        <div class="experience-heading">
+                            <div><h3>UT Dallas AI/ML Program</h3><p>AI/ML Internship</p></div>
+                            <time>Jun &ndash; Jul 2024</time>
+                        </div>
+                        <p>Built and evaluated a TensorFlow character-recognition model and presented the results at the final program showcase.</p>
+                    </article>
+                </div>
+                <div class="col-lg-6 d-flex">
+                    <article class="experience-card w-100">
+                        <div class="experience-heading">
+                            <div><h3>Academic Empowerment Project</h3><p>Vice President of Technology</p></div>
+                            <time>Aug 2022 &ndash; May 2024</time>
+                        </div>
+                        <p>Developed education-management software, taught foundational Python, and supported curriculum serving approximately 100 students nationwide.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" aria-hidden="true"><hr class="section-divider"></div>
+
+    <section id="skills" class="basic-2 page-section" aria-labelledby="skills-heading">
+        <div class="container">
+            <h2 id="skills-heading" class="h2-heading">Skills</h2>
+            <div class="row g-4 skill-grid">
+                <div class="col-md-6 col-xl-3"><div class="skill-group h-100"><i class="fas fa-code" aria-hidden="true"></i><h3>Languages</h3><p>Java, Python, C, C++, JavaScript, HTML, CSS</p></div></div>
+                <div class="col-md-6 col-xl-3"><div class="skill-group h-100"><i class="fas fa-robot" aria-hidden="true"></i><h3>Robotics &amp; Vision</h3><p>WPILib, PhotonVision, PathPlanner, CTRE Phoenix 6, OpenCV, MediaPipe, TensorFlow</p></div></div>
+                <div class="col-md-6 col-xl-3"><div class="skill-group h-100"><i class="fas fa-tools" aria-hidden="true"></i><h3>Tools</h3><p>Git, GitHub, VS Code, Vite, Arduino IDE, Fusion 360, Multisim</p></div></div>
+                <div class="col-md-6 col-xl-3"><div class="skill-group h-100"><i class="fas fa-microchip" aria-hidden="true"></i><h3>Hardware &amp; Fabrication</h3><p>Raspberry Pi, Pi Pico, Orange Pi, CAN, 3D printing, CNC machining, soldering</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="resume" class="container" aria-hidden="true"><hr class="section-divider"></div>
+
+    <section class="basic-2 page-section" aria-labelledby="resume-heading">
+        <div class="container text-center">
+            <h2 id="resume-heading" class="h2-heading">Resume</h2>
+            <object class="resume-preview" data="/documents/Resume.pdf" type="application/pdf" aria-label="Kumar Samyak resume">
+                <p>Your browser cannot display the resume preview. <a class="custom-link" href="/documents/Resume.pdf">Open the PDF</a>.</p>
+            </object>
+            <div class="download-container">
+                <a class="btn-solid-lg download" href="/documents/Resume.pdf" download>Download PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" aria-hidden="true"><hr class="section-divider"></div>
+
+    <section id="contact" class="form-1" aria-labelledby="contact-heading">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading orange">About ISM</h2>
+                    <h2 id="contact-heading" class="h2-heading">Contact</h2>
+                    <p class="p-heading">The fastest way to reach me is at <a class="no-line custom-link" href="mailto:ksamyak2@illinois.edu">ksamyak2@illinois.edu</a>.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="text-container first">
-                        <p>
-                        Frisco ISD's Independent Study and Mentorship program is a program for which students must apply, interview, and be recommended during their junior and/or senior year.  Gifted and high achieving students focus their study on a topic or career of their choice. They develop a research portfolio that has a collection of resources including interviews and observations with people who work in their chosen field or topic of study.
-
-                        Students work on time management, communication, research, goal setting, various soft skills, and presentation skills. During the spring semester, students work with mentors at their mentor's place of business to gain "real world" experience and also to create an advanced product related to their topic. Students progressively give longer speech presentations and will give a formal presentation of their product and mentorship in May. Students leave the ISM experience knowing more about their chosen profession and whether or not that profession is the life and career path they desire to choose as they
-                        prepare to enter college.
-                        </p>
-                    </div> <!-- end of text-container -->
-                    <!-- link to FISD ISM -->
-                    <div class="text-container second">
-                        <p>For more information about the program, visit the <a class="no-line custom-link" href="https://www.friscoisd.org/departments/independent-study-mentorship/home" target="_blank">Frisco ISD ISM website</a>.</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of about -->
-
-    <!-- Section Divider -->
-    <div id="blogs" class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr class="section-divider">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    <!-- end of section divider -->
-
-    <!-- Index Blog -->
-    <div class="blog-container">
-        <h2 class="h2-heading orange text-center">ISM Blogs</h2>
-        <div class="card mt-3 mb-4 ms-5 me-5 blog">
-            <div class="card-body">
-                <h5 class="card-title">The Final Iteration</h5>
-                <h6 class="card-subtitle mb-2">April 13h, 2026</h6>
-                <div class="card-text collapse-content">
-                    Over the last week, I have been preparing for my final presentation night by rehearsing my speech and presentation in front of my classmates and teacher. This practice rehearsal went very well, in my opinion, as I covered all the points I wanted to, except for one about my future goals with this robotic hand project and college in general. To prevent this, my teacher advised me to add a slide to my presentation specifically about this and suggested adding pictures of the professionals I interviewed to make it feel more personal. As for the actual robotic hand, everything works as is, but I plan to code a few more fun concepts, like having the hand count from one to five or even ask what the audience wants it to do to make it more engaging and further present my project. Unfortunately (or fortunately), I will miss my presentation night at Independence High School because my robotics team qualified for the state championship, which is on the same day. So, instead, I will be giving my presentation at Liberty High School on Tuesday the following week, which gives me a bit more time to prepare.
-                </div>
-                <button class="btn btn-primary toggle-button">Read More</button>
-            </div>
-        </div>
-        <a href="/blogs.html" class="btn-outline-reg">Read All</a>
-    </div> <!-- end of index blog container -->
-    <!-- end of index blog -->
-
-    <!-- Section Divider -->
-    <div id="research" class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr class="section-divider">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    <!-- end of section divider -->
-
-    <!-- Research -->
-    <div class="basic-2">
-        <h2 class="h2-heading">Research</h2>
-
-        <div class="button-container">
-            <a href="/research-articles.html" class="btn-solid-reg mb-2 me-5">
-                <h5 class="card-title">Research Articles</h5>
-            </a>
-            
-            <a href="/research-interviews.html" class="btn-solid-reg mt-2">
-                <h5 class="card-title">Research Interviews</h5>
-            </a>
-        </div>
-    </div>
-
-    <!-- Section Divider -->
-    <div id="mentor" class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr class="section-divider">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    <!-- end of section divider -->
-
-    <!-- Mentor -->
-    <!-- Card -->
-    <div class="text-center mentor">
-        <img src="/images/Dawud Hussain Rahmati.png" class="card-img" alt="Dawud Hussain Rahmati (Mentor) Picture">
-        <div class="card-body">
-            <h5 class="card-title">Dawud Hussain Rahmati</h5>
-            <h6 class="card-subtitle mb-4">Mentor</h6>
-            <p class="card-text">
-                Dawud Rahmati is a college student at the University of New South Wales (Sydney) studying Electrical Engineering. I met him through my robotics club, as he is our virtual mentor on the business and outreach aspects of the team. He is a wonderful mentor for me because he is very knowledgeable about robotics and has much experience in the surrounding fields, especially electrical engineering. I appreciate the time and effort he has taken to guide me through my research and development for my robotic hand.
-            </p>
-        </div>
-    </div>
-    <!-- end of card -->
-
-    <!-- Section Divider -->
-    <div id="projects" class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr class="section-divider">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    <!-- end of section divider -->
-
-    <!-- Projects -->
-    <div class="basic-2">
-        <h2 class="h2-heading">Projects</h2>
-
-        <div class="button-container">
-            <a href="/original-work.html" class="btn-solid-reg mb-2 me-5">
-                <h5 class="card-title">Original Work</h5>
-            </a>
-            
-            <a href="/final-product.html" class="btn-solid-reg mt-2">
-                <h5 class="card-title">Final Product</h5>
-            </a>
-        </div>
-    </div>
-
-    <!-- Section Divider -->
-    <div id="ism-1" class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr class="section-divider">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    <!-- end of section divider -->
-
-    <!-- ISM 1 -->
-    <div class="basic-2">
-        <h2 class="h2-heading">ISM 1</h2>
-
-        <div class="button-container">
-            <a href="/ism-1/original-work.html" class="btn-solid-reg mb-2 me-3">
-                <h5 class="card-title">Original Work</h5>
-            </a>
-
-            <a href="/ism-1/final-product.html" class="btn-solid-reg mt-2 me-3">
-                <h5 class="card-title">Final Product</h5>
-            </a>
-
-            <a href="/ism-1/research-articles.html" class="btn-solid-reg mb-2 me-3">
-                <h5 class="card-title">Research Articles</h5>
-            </a>
-
-            <a href="/ism-1/research-interviews.html" class="btn-solid-reg mt-2 me-3">
-                <h5 class="card-title">Research Interviews</h5>
-            </a>
-
-            <a href="/ism-1/blogs.html" class="btn-solid-reg mt-2">
-                <h5 class="card-title">Blogs</h5>
-            </a>
-        </div>
-    </div>
-
-    <!-- Section Divider -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr class="section-divider">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    <!-- end of section divider -->
-
-    <!-- Contact -->
-    <div id="contact" class="form-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Contact Me</h2>
-                    <p class="p-heading">The fastest way to contact me is by using the following email <a class="no-line custom-link" href="mailto:kumar_samyak@outlook.com">kumar_samyak@outlook.com</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Contact Form -->
                     <form id="contactForm" action="https://formspree.io/f/xjkvqydq" method="POST">
                         <div class="form-group">
                             <input type="text" class="form-control-input" id="cname" name="name" required>
@@ -413,19 +386,13 @@
                             <button type="submit" class="form-control-submit-button">Submit</button>
                         </div>
                     </form>
-                    <!-- end of contact form -->
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->  
-    <!-- end of contact -->
-
-    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="/js/scripts.js"></script>
 </body>

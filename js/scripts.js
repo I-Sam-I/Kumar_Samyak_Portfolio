@@ -4,14 +4,20 @@
   "use strict";
 
   $.easing.customEasing = function (x, t, b, c, d) {
-    console.log("Custom easing function called"); // Add console log
-    return c * ((t = t / d - 1) * t * t + 1) + b; // custom easing function
-  };
+    t /= d / 2;
 
+    if (t < 1) {
+      return (c / 2) * t * t + b;
+    }
+
+    t--;
+
+    return (-c / 2) * (t * (t - 2) - 1) + b;
+  };
   /* Navbar Scripts */
   // jQuery to collapse the navbar on scroll
   $(window).on("scroll load", function () {
-    if ($(".navbar").offset().top > 60) {
+    if ($(".navbar").length && $(window).scrollTop() > 60) {
       $(".fixed-top").addClass("top-nav-collapse");
     } else {
       $(".fixed-top").removeClass("top-nav-collapse");
@@ -22,11 +28,18 @@
   $(function () {
     $(document).on("click", "a.page-scroll", function (event) {
       var $anchor = $(this);
+      var href = $anchor.attr("href");
+      var $target = href === "body" ? $("body") : href && href.charAt(0) === "#" ? $(href) : $();
+
+      if (!$target.length) {
+        return;
+      }
+
       $("html, body")
         .stop()
         .animate(
           {
-            scrollTop: $($anchor.attr("href")).offset().top,
+            scrollTop: Math.max($target.offset().top - ($(".navbar").outerHeight() || 0), 0),
           },
           600,
           "customEasing"
@@ -87,13 +100,14 @@
     });
   });
 
-  // offcanvas script from Bootstrap + added element to close menu on click in small viewport
-  $('[data-toggle="offcanvas"], .navbar-nav li a:not(.dropdown-toggle').on(
-    "click",
-    function () {
-      $(".offcanvas-collapse").toggleClass("open");
+  // Close the Bootstrap navigation after an in-page link is selected on small screens.
+  $(".navbar-nav .nav-link").on("click", function () {
+    var navigation = document.getElementById("mainNavigation");
+
+    if (navigation && navigation.classList.contains("show") && window.bootstrap) {
+      bootstrap.Collapse.getOrCreateInstance(navigation).hide();
     }
-  );
+  });
 
   // hover in desktop mode
   function toggleDropdown(e) {
