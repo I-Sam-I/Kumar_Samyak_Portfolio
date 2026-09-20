@@ -26,6 +26,12 @@
 
   // jQuery for page scrolling feature - requires jQuery Easing plugin
   $(function () {
+    var scrollSpyElement = document.querySelector('[data-bs-spy="scroll"]');
+
+    if (scrollSpyElement && window.bootstrap && bootstrap.ScrollSpy) {
+      bootstrap.ScrollSpy.getOrCreateInstance(scrollSpyElement).refresh();
+    }
+
     $(document).on("click", "a.page-scroll", function (event) {
       var $anchor = $(this);
       var href = $anchor.attr("href");
