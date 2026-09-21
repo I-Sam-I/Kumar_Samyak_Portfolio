@@ -10,7 +10,7 @@
     <meta property="og:site_name" content="Kumar Samyak Portfolio">
     <meta property="og:title" content="Five-Finger Tendon-Driven Robotic Hand | Kumar Samyak">
     <meta property="og:description" content="A 3D-printable robotic hand with tendon-driven flexion, TPU passive return, and Raspberry Pi control.">
-    <meta property="og:image" content="/images/projects/robotic-hand/ism/ism-2/final-product/Hand.jpg">
+    <meta property="og:image" content="/images/projects/robotic-hand/cover.jpg">
     <meta property="og:url" content="https://kumarsamyak.netlify.app/projects/robotic-hand.html">
     <meta name="twitter:card" content="summary_large_image">
 
@@ -61,8 +61,8 @@
                         <a class="btn-outline-sm" href="/index.html#projects">Back to Projects</a>
                     </div>
                 </div>
-                <div class="project-cover-frame">
-                    <img src="/images/projects/robotic-hand/cover.jpg" alt="Five-finger tendon-driven robotic hand project cover" onerror="this.onerror=null; this.src='/images/projects/robotic-hand/ism/ism-2/final-product/Hand.jpg';">
+                <div class="project-cover-frame project-cover-frame--portrait">
+                    <img src="/images/projects/robotic-hand/cover.jpg" width="2160" height="3840" alt="Top view of the five-finger robotic hand prototype and palm-mounted servos" fetchpriority="high" onerror="this.onerror=null; this.src='/images/projects/robotic-hand/ism/ism-2/final-product/Hand.jpg';">
                 </div>
             </div>
         </header>
@@ -101,6 +101,10 @@
                         <p>A Raspberry Pi runs Python commands through a PCA9685 PWM controller to drive five MG90S servos independently.</p>
                     </article>
                 </div>
+                <figure class="project-media-card project-media-feature">
+                    <img src="/images/projects/robotic-hand/cad-render.png" width="1022" height="720" alt="CAD render of the robotic hand with five articulated fingers and palm-mounted components" loading="lazy" decoding="async">
+                    <figcaption>CAD render of the hand assembly and integrated component layout.</figcaption>
+                </figure>
             </div>
         </section>
 
@@ -122,6 +126,23 @@
                     <div class="system-node">Released Tendon Tension</div><span class="system-arrow" aria-hidden="true">&rarr;</span>
                     <div class="system-node">TPU Return Elements</div><span class="system-arrow" aria-hidden="true">&rarr;</span>
                     <div class="system-node">Passive Finger Extension</div>
+                </div>
+                <div class="project-section-media">
+                    <h3 class="project-media-subheading">Electronics integration</h3>
+                    <div class="project-media-grid">
+                        <figure class="project-media-card">
+                            <img src="/images/projects/robotic-hand/wiring.jpg" width="1398" height="1874" alt="Close-up of the robotic hand wiring and connected control boards" loading="lazy" decoding="async">
+                            <figcaption>Prototype wiring and control boards during assembly.</figcaption>
+                        </figure>
+                        <figure class="project-media-card project-media-card--diagram">
+                            <img src="/images/projects/robotic-hand/block-diagram.png" width="1082" height="1196" alt="Block diagram of the power, code, I2C, ground, PWM, and servo connections" loading="lazy" decoding="async">
+                            <figcaption>High-level power, code, control, and servo connections.</figcaption>
+                        </figure>
+                        <figure class="project-media-card project-media-card--diagram project-media-card--wide">
+                            <img src="/images/projects/robotic-hand/circuit-diagram.png" width="1080" height="766" alt="Circuit diagram showing five servos, a controller, servo driver, sensor, buzzer, and power connections" loading="lazy" decoding="async">
+                            <figcaption>Detailed component wiring and power connections.</figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </section>
@@ -146,29 +167,32 @@
                         <p>Spool diameter, tendon routing, TPU geometry, mechanical clearances, and electronics placement were iterated together because each affected available travel and load.</p>
                     </article>
                 </div>
+                <div class="project-section-media">
+                    <h3 class="project-media-subheading">Development testing</h3>
+                    <figure class="project-media-card project-video-card">
+                        <video class="project-portrait-video" controls playsinline preload="metadata" width="1080" height="1920" aria-label="Sensor calibration and robotic hand prototype testing">
+                            <source src="/images/projects/robotic-hand/sensor-calibration.mp4" type="video/mp4">
+                            Your browser does not support embedded video. <a href="/images/projects/robotic-hand/sensor-calibration.mp4" download>Download the sensor calibration video</a>.
+                        </video>
+                        <figcaption>Sensor calibration and prototype testing. <a class="project-media-download" href="/images/projects/robotic-hand/sensor-calibration.mp4" download>Download MP4</a>.</figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
 
         <section class="project-detail-section section-dark" aria-labelledby="media-heading">
             <div class="container">
                 <div class="project-section-heading">
-                    <p class="project-eyebrow">Media</p>
-                    <h2 id="media-heading">Prototype, electronics, and CAD</h2>
+                    <p class="project-eyebrow">Working Demonstration</p>
+                    <h2 id="media-heading">Full-hand movement</h2>
                 </div>
-                <div class="project-gallery">
-                    <figure>
-                        <img src="/images/projects/robotic-hand/gallery-01.jpg" alt="Completed tendon-driven robotic hand prototype" loading="lazy" onerror="this.onerror=null; this.src='/images/projects/robotic-hand/ism/ism-2/final-product/Hand.jpg';">
-                        <figcaption>Five-finger physical prototype</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="/images/projects/robotic-hand/gallery-02.jpg" alt="Robotic hand servo and control electronics" loading="lazy" onerror="this.onerror=null; this.src='/images/projects/robotic-hand/ism/ism-2/final-product/Electrical.jpg';">
-                        <figcaption>Servo and control electronics</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="/images/projects/robotic-hand/gallery-03.jpg" alt="Robotic hand CAD assembly" loading="lazy" onerror="this.onerror=null; this.src='/images/projects/robotic-hand/ism/ism-2/original-work/Robotic%20Hand%20Home%20View.png';">
-                        <figcaption>CAD assembly and packaging</figcaption>
-                    </figure>
-                </div>
+                <figure class="project-media-card project-video-card">
+                    <video class="project-portrait-video" controls playsinline preload="metadata" width="1174" height="1920" aria-label="Full robotic hand movement demonstration">
+                        <source src="/images/projects/robotic-hand/demo.mp4" type="video/mp4">
+                        Your browser does not support embedded video. <a href="/images/projects/robotic-hand/demo.mp4" download>Download the full-hand demonstration</a>.
+                    </video>
+                    <figcaption>Full-hand movement demonstration. <a class="project-media-download" href="/images/projects/robotic-hand/demo.mp4" download>Download MP4</a>.</figcaption>
+                </figure>
             </div>
         </section>
 
