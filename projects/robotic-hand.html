@@ -26,7 +26,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
 </head>
 
-<body class="project-detail-body">
+<body class="project-detail-body project-story-page">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Primary navigation">
         <div class="container">
             <a class="navbar-brand logo-image" href="/index.html#header">
@@ -57,12 +57,13 @@
                     <h1>Five-Finger Tendon-Driven Robotic Hand</h1>
                     <p class="project-lead">A 3D-printable robotic hand with independent tendon-driven fingers, passive TPU return springs, and programmable control from a Raspberry Pi.</p>
                     <div class="project-actions">
-                        <a class="btn-solid-reg page-scroll" href="#development-archive">Development Archive</a>
+                        <a class="btn-solid-reg page-scroll" href="#working-demo">Watch Demo</a>
+                        <a class="btn-outline-sm page-scroll" href="#development-archive">Development Archive</a>
                         <a class="btn-outline-sm" href="/index.html#projects">Back to Projects</a>
                     </div>
                 </div>
                 <div class="project-cover-frame project-cover-frame--portrait">
-                    <img src="/images/projects/robotic-hand/cover.jpg" width="2160" height="3840" alt="Top view of the five-finger robotic hand prototype and palm-mounted servos" fetchpriority="high" onerror="this.onerror=null; this.src='/images/projects/robotic-hand/ism/ism-2/final-product/Hand.jpg';">
+                    <img src="/images/projects/robotic-hand/cover.jpg" srcset="/images/projects/robotic-hand/responsive/cover-480.jpg 480w, /images/projects/robotic-hand/responsive/cover-768.jpg 768w, /images/projects/robotic-hand/responsive/cover-1080.jpg 1080w, /images/projects/robotic-hand/responsive/cover-1440.jpg 1440w" sizes="(max-width: 991px) min(calc(100vw - 3rem), 27rem), 27rem" width="2160" height="3840" alt="Top view of the five-finger robotic hand prototype and palm-mounted servos" fetchpriority="high" decoding="async" onerror="this.onerror=null; this.srcset=''; this.src='/images/projects/robotic-hand/ism/ism-2/final-product/Hand.jpg';">
                 </div>
             </div>
         </header>
@@ -102,13 +103,32 @@
                     </article>
                 </div>
                 <figure class="project-media-card project-media-feature">
-                    <img src="/images/projects/robotic-hand/cad-render.png" width="1022" height="720" alt="CAD render of the robotic hand with five articulated fingers and palm-mounted components" loading="lazy" decoding="async">
+                    <a class="project-media-link" href="/images/projects/robotic-hand/cad-render.png" aria-label="Open the robotic hand CAD render at full resolution">
+                        <img src="/images/projects/robotic-hand/cad-render.png" width="1022" height="720" alt="CAD render of the robotic hand with five articulated fingers and palm-mounted components" loading="lazy" decoding="async">
+                    </a>
                     <figcaption>CAD render of the hand assembly and integrated component layout.</figcaption>
                 </figure>
             </div>
         </section>
 
-        <section class="project-detail-section section-dark" aria-labelledby="system-heading">
+        <section id="working-demo" class="project-detail-section section-dark" aria-labelledby="media-heading">
+            <div class="container project-demo-layout">
+                <div class="project-section-heading">
+                    <p class="project-eyebrow">Working Demonstration</p>
+                    <h2 id="media-heading">Full-hand movement</h2>
+                    <p>The assembled prototype demonstrates the hand's five-finger movement.</p>
+                </div>
+                <figure class="project-media-card project-video-card">
+                    <video class="project-portrait-video" controls playsinline preload="metadata" poster="/images/projects/robotic-hand/posters/demo.jpg" width="1174" height="1920" aria-label="Full robotic hand movement demonstration">
+                        <source src="/images/projects/robotic-hand/demo.mp4" type="video/mp4">
+                        Your browser does not support embedded video. <a href="/images/projects/robotic-hand/demo.mp4" download>Download the full-hand demonstration</a>.
+                    </video>
+                    <figcaption>Full-hand movement demonstration. <a class="project-media-download" href="/images/projects/robotic-hand/demo.mp4" download>Download MP4</a>.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="project-detail-section" aria-labelledby="system-heading">
             <div class="container">
                 <div class="project-section-heading">
                     <p class="project-eyebrow">System Diagram</p>
@@ -129,17 +149,23 @@
                 </div>
                 <div class="project-section-media">
                     <h3 class="project-media-subheading">Electronics integration</h3>
-                    <div class="project-media-grid">
-                        <figure class="project-media-card">
-                            <img src="/images/projects/robotic-hand/wiring.jpg" width="1398" height="1874" alt="Close-up of the robotic hand wiring and connected control boards" loading="lazy" decoding="async">
+                    <div class="project-media-grid project-media-grid--electronics">
+                        <figure class="project-media-card project-media-card--portrait">
+                            <a class="project-media-stage project-media-stage--tall" href="/images/projects/robotic-hand/wiring.jpg" aria-label="Open the robotic hand wiring photo at full resolution">
+                                <img src="/images/projects/robotic-hand/wiring.jpg" srcset="/images/projects/robotic-hand/responsive/wiring-480.jpg 480w, /images/projects/robotic-hand/responsive/wiring-768.jpg 768w, /images/projects/robotic-hand/responsive/wiring-1024.jpg 1024w" sizes="(max-width: 767px) calc(100vw - 3rem), 33rem" width="1398" height="1874" alt="Close-up of the robotic hand wiring and connected control boards" loading="lazy" decoding="async">
+                            </a>
                             <figcaption>Prototype wiring and control boards during assembly.</figcaption>
                         </figure>
                         <figure class="project-media-card project-media-card--diagram">
-                            <img src="/images/projects/robotic-hand/block-diagram.png" width="1082" height="1196" alt="Block diagram of the power, code, I2C, ground, PWM, and servo connections" loading="lazy" decoding="async">
+                            <a class="project-media-stage project-media-stage--tall" href="/images/projects/robotic-hand/block-diagram.png" aria-label="Open the robotic hand block diagram at full resolution">
+                                <img src="/images/projects/robotic-hand/block-diagram.png" width="1082" height="1196" alt="Block diagram of the power, code, I2C, ground, PWM, and servo connections" loading="lazy" decoding="async">
+                            </a>
                             <figcaption>High-level power, code, control, and servo connections.</figcaption>
                         </figure>
                         <figure class="project-media-card project-media-card--diagram project-media-card--wide">
-                            <img src="/images/projects/robotic-hand/circuit-diagram.png" width="1080" height="766" alt="Circuit diagram showing five servos, a controller, servo driver, sensor, buzzer, and power connections" loading="lazy" decoding="async">
+                            <a class="project-media-stage project-media-stage--wide" href="/images/projects/robotic-hand/circuit-diagram.png" aria-label="Open the robotic hand circuit diagram at full resolution">
+                                <img src="/images/projects/robotic-hand/circuit-diagram.png" width="1080" height="766" alt="Circuit diagram showing five servos, a controller, servo driver, sensor, buzzer, and power connections" loading="lazy" decoding="async">
+                            </a>
                             <figcaption>Detailed component wiring and power connections.</figcaption>
                         </figure>
                     </div>
@@ -147,7 +173,7 @@
             </div>
         </section>
 
-        <section class="project-detail-section" aria-labelledby="iteration-heading">
+        <section class="project-detail-section section-dark" aria-labelledby="iteration-heading">
             <div class="container">
                 <div class="project-section-heading">
                     <p class="project-eyebrow">Engineering Decisions &amp; Iteration</p>
@@ -170,29 +196,13 @@
                 <div class="project-section-media">
                     <h3 class="project-media-subheading">Development testing</h3>
                     <figure class="project-media-card project-video-card">
-                        <video class="project-portrait-video" controls playsinline preload="metadata" width="1080" height="1920" aria-label="Sensor calibration and robotic hand prototype testing">
+                        <video class="project-portrait-video" controls playsinline preload="metadata" poster="/images/projects/robotic-hand/posters/sensor-calibration.jpg" width="1080" height="1920" aria-label="Sensor calibration and robotic hand prototype testing">
                             <source src="/images/projects/robotic-hand/sensor-calibration.mp4" type="video/mp4">
                             Your browser does not support embedded video. <a href="/images/projects/robotic-hand/sensor-calibration.mp4" download>Download the sensor calibration video</a>.
                         </video>
                         <figcaption>Sensor calibration and prototype testing. <a class="project-media-download" href="/images/projects/robotic-hand/sensor-calibration.mp4" download>Download MP4</a>.</figcaption>
                     </figure>
                 </div>
-            </div>
-        </section>
-
-        <section class="project-detail-section section-dark" aria-labelledby="media-heading">
-            <div class="container">
-                <div class="project-section-heading">
-                    <p class="project-eyebrow">Working Demonstration</p>
-                    <h2 id="media-heading">Full-hand movement</h2>
-                </div>
-                <figure class="project-media-card project-video-card">
-                    <video class="project-portrait-video" controls playsinline preload="metadata" width="1174" height="1920" aria-label="Full robotic hand movement demonstration">
-                        <source src="/images/projects/robotic-hand/demo.mp4" type="video/mp4">
-                        Your browser does not support embedded video. <a href="/images/projects/robotic-hand/demo.mp4" download>Download the full-hand demonstration</a>.
-                    </video>
-                    <figcaption>Full-hand movement demonstration. <a class="project-media-download" href="/images/projects/robotic-hand/demo.mp4" download>Download MP4</a>.</figcaption>
-                </figure>
             </div>
         </section>
 

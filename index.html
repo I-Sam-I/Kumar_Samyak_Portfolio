@@ -28,7 +28,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#mainNavigation" data-bs-root-margin="-80px 0px -40%" tabindex="0">
+<body class="portfolio-home" data-bs-spy="scroll" data-bs-target="#mainNavigation" data-bs-root-margin="-80px 0px -40%" tabindex="0">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Primary navigation">
         <div class="container">
             <a class="navbar-brand logo-image page-scroll" href="#header">
@@ -122,31 +122,9 @@
             <h3 class="text-center orange mb-4">Featured Projects</h3>
             <div class="row g-4 project-grid">
                 <div class="col-md-6 col-xl-4 d-flex">
-                    <article class="card project-card w-100">
-                        <div class="project-media">
-                            <img src="/images/projects/gym-bro/cover.jpg" class="card-img-top project-card-image" alt="Gym Bro project cover" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='/images/default-pic.png'; this.classList.add('project-placeholder');">
-                        </div>
-                        <div class="card-body">
-                            <p class="project-eyebrow">Computer Vision &bull; Current</p>
-                            <h3 class="card-title">Gym Bro</h3>
-                            <p class="project-subtitle">Computer Vision Workout Assistant</p>
-                            <p class="card-text">A browser-based workout assistant that uses real-time local pose tracking, elbow-angle analysis, and a movement state machine to count side-view bicep curls.</p>
-                            <ul class="tech-list" aria-label="Technologies">
-                                <li>JavaScript</li><li>MediaPipe</li><li>Canvas API</li><li>Vite</li>
-                            </ul>
-                            <p class="project-result"><i class="fas fa-check-circle" aria-hidden="true"></i> Real-time pose analysis runs locally in the browser.</p>
-                            <div class="project-actions">
-                                <a class="btn-solid-reg" href="/projects/gym-bro.html">View Project</a>
-                                <a class="btn-outline-sm external-link" href="https://github.com/I-Sam-I/gym-bro" target="_blank" rel="noopener noreferrer">View on GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="visually-hidden"> (opens in a new tab)</span></a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="col-md-6 col-xl-4 d-flex">
                     <article class="card project-card w-100 project-card-featured">
                         <div class="project-media">
-                            <img src="/images/projects/robotic-hand/cover.jpg" class="card-img-top project-card-image" width="2160" height="3840" alt="Five-finger tendon-driven robotic hand project cover" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='/images/projects/robotic-hand/ism/ism-2/final-product/Hand.jpg';">
+                            <img src="/images/projects/robotic-hand/cover.jpg" srcset="/images/projects/robotic-hand/responsive/cover-480.jpg 480w, /images/projects/robotic-hand/responsive/cover-768.jpg 768w, /images/projects/robotic-hand/responsive/cover-1080.jpg 1080w, /images/projects/robotic-hand/responsive/cover-1440.jpg 1440w" sizes="(max-width: 767px) calc(100vw - 3rem), (max-width: 1199px) calc(50vw - 2.5rem), 26rem" class="card-img-top project-card-image project-card-image--portrait" width="2160" height="3840" alt="Five-finger tendon-driven robotic hand prototype viewed from above" loading="lazy" decoding="async" onerror="this.onerror=null; this.srcset=''; this.src='/images/projects/robotic-hand/ism/ism-2/final-product/Hand.jpg';">
                         </div>
                         <div class="card-body">
                             <p class="project-eyebrow">Robotics &bull; Embedded Systems</p>
@@ -166,7 +144,7 @@
                 <div class="col-md-6 col-xl-4 d-flex">
                     <article class="card project-card w-100">
                         <div class="project-media">
-                            <img src="/images/projects/frc-6901/cover.jpg" class="card-img-top project-card-image" width="3024" height="4032" alt="FRC Team 6901 competition robot" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='/images/default-pic.png'; this.classList.add('project-placeholder');">
+                            <img src="/images/projects/frc-6901/cover.jpg" srcset="/images/projects/frc-6901/responsive/cover-480.jpg 480w, /images/projects/frc-6901/responsive/cover-768.jpg 768w, /images/projects/frc-6901/responsive/cover-1080.jpg 1080w, /images/projects/frc-6901/responsive/cover-1440.jpg 1440w" sizes="(max-width: 767px) calc(100vw - 3rem), (max-width: 1199px) calc(50vw - 2.5rem), 26rem" class="card-img-top project-card-image project-card-image--portrait" width="3024" height="4032" alt="FRC Team 6901 competition robot on the field" loading="lazy" decoding="async" onerror="this.onerror=null; this.srcset=''; this.src='/images/default-pic.png'; this.classList.add('project-placeholder');">
                         </div>
                         <div class="card-body">
                             <p class="project-eyebrow">Competitive Robotics</p>
@@ -179,6 +157,28 @@
                             <div class="project-actions">
                                 <a class="btn-solid-reg" href="/projects/frc-6901.html">View Project</a>
                                 <a class="btn-outline-sm external-link" href="https://knights6901.org/" target="_blank" rel="noopener noreferrer">Team Website <i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="visually-hidden"> (opens in a new tab)</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-6 col-xl-4 d-flex">
+                    <article class="card project-card w-100">
+                        <div class="project-media">
+                            <img src="/images/projects/gym-bro/cover.jpg" class="card-img-top project-card-image" alt="Gym Bro project cover" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='/images/default-pic.png'; this.classList.add('project-placeholder');">
+                        </div>
+                        <div class="card-body">
+                            <p class="project-eyebrow">Computer Vision &bull; Current</p>
+                            <h3 class="card-title">Gym Bro</h3>
+                            <p class="project-subtitle">Computer Vision Workout Assistant</p>
+                            <p class="card-text">A browser-based workout assistant that uses real-time local pose tracking, elbow-angle analysis, and a movement state machine to count side-view bicep curls.</p>
+                            <ul class="tech-list" aria-label="Technologies">
+                                <li>JavaScript</li><li>MediaPipe</li><li>Canvas API</li><li>Vite</li>
+                            </ul>
+                            <p class="project-result"><i class="fas fa-check-circle" aria-hidden="true"></i> Real-time pose analysis runs locally in the browser.</p>
+                            <div class="project-actions">
+                                <a class="btn-solid-reg" href="/projects/gym-bro.html">View Project</a>
+                                <a class="btn-outline-sm external-link" href="https://github.com/I-Sam-I/gym-bro" target="_blank" rel="noopener noreferrer">View on GitHub <i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="visually-hidden"> (opens in a new tab)</span></a>
                             </div>
                         </div>
                     </article>
@@ -303,9 +303,9 @@
         </div>
     </section>
 
-    <div id="resume" class="container" aria-hidden="true"><hr class="section-divider"></div>
+    <div class="container" aria-hidden="true"><hr class="section-divider"></div>
 
-    <section class="basic-2 page-section" aria-labelledby="resume-heading">
+    <section id="resume" class="basic-2 page-section" aria-labelledby="resume-heading">
         <div class="container text-center">
             <h2 id="resume-heading" class="h2-heading">Resume</h2>
             <object class="resume-preview" data="/documents/Resume.pdf" type="application/pdf" aria-label="Kumar Samyak resume">

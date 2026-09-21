@@ -26,7 +26,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
 </head>
 
-<body class="project-detail-body">
+<body class="project-detail-body project-story-page">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Primary navigation">
         <div class="container">
             <a class="navbar-brand logo-image" href="/index.html#header">
@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="project-cover-frame project-cover-frame--portrait">
-                    <img src="/images/projects/frc-6901/cover.jpg" width="3024" height="4032" alt="FRC Team 6901 competition robot on the field" fetchpriority="high" onerror="this.onerror=null; this.src='/images/default-pic.png'; this.classList.add('project-placeholder');">
+                    <img src="/images/projects/frc-6901/cover.jpg" srcset="/images/projects/frc-6901/responsive/cover-480.jpg 480w, /images/projects/frc-6901/responsive/cover-768.jpg 768w, /images/projects/frc-6901/responsive/cover-1080.jpg 1080w, /images/projects/frc-6901/responsive/cover-1440.jpg 1440w" sizes="(max-width: 991px) min(calc(100vw - 3rem), 27rem), 27rem" width="3024" height="4032" alt="FRC Team 6901 competition robot on the field" fetchpriority="high" decoding="async" onerror="this.onerror=null; this.srcset=''; this.src='/images/default-pic.png'; this.classList.add('project-placeholder');">
                 </div>
             </div>
         </header>
@@ -95,31 +95,47 @@
                     <p class="project-eyebrow">Technical Breakdown</p>
                     <h2 id="software-heading">Robot software and controls</h2>
                 </div>
-                <div class="project-content-grid">
-                    <article class="project-detail-card">
-                        <h3>Robot Software</h3>
-                        <p>Java and WPILib organized drivetrain and mechanism behavior, operator commands, closed-loop controls, telemetry, and competition-mode state.</p>
-                    </article>
-                    <article class="project-detail-card">
-                        <h3>Swerve &amp; Localization</h3>
-                        <p>Field-centric swerve used gyro heading and wheel feedback for intuitive driving. Odometry tracked robot pose for autonomous motion and repeatable field positioning.</p>
-                    </article>
-                    <article class="project-detail-card">
-                        <h3>Vision &amp; Autonomous</h3>
-                        <p>PhotonVision ran on an Orange Pi and supplied vision measurements. PathPlanner and pose data supported vision-assisted autonomous routines.</p>
-                    </article>
-                    <article class="project-detail-card">
-                        <h3>Controls &amp; Hardware</h3>
-                        <p>PID control, CTRE Phoenix 6 motor APIs, Kraken X60 motors, and the robot's CAN network connected high-level behavior to drivetrain and mechanism hardware.</p>
-                    </article>
-                    <article class="project-detail-card">
-                        <h3>Driver Integration</h3>
-                        <p>Software behavior was tuned around driver input, mechanism timing, sensor feedback, and the constraints found during practice and competition.</p>
-                    </article>
-                    <article class="project-detail-card">
-                        <h3>Autonomous Integration</h3>
-                        <p>Trajectory following, robot pose, mechanism commands, and vision updates were combined into autonomous sequences designed for field execution.</p>
-                    </article>
+                <div class="project-story-layout">
+                    <div class="project-supporting-media-stack">
+                        <figure id="media-heading" class="project-media-card project-media-card--story">
+                            <div class="project-media-stage project-media-stage--tall">
+                                <img src="/images/projects/frc-6901/controls-integration.jpg" srcset="/images/projects/frc-6901/responsive/controls-integration-480.jpg 480w, /images/projects/frc-6901/responsive/controls-integration-768.jpg 768w, /images/projects/frc-6901/responsive/controls-integration-1024.jpg 1024w" sizes="(max-width: 991px) calc(100vw - 3rem), 28rem" width="1584" height="2112" alt="FRC Team 6901 robot beside a laptop during software and controls integration" loading="lazy" decoding="async">
+                            </div>
+                            <figcaption>Software and controls integration beside the robot.</figcaption>
+                        </figure>
+                        <figure class="project-media-card project-media-card--story">
+                            <div class="project-media-stage project-media-stage--native">
+                                <img src="/images/projects/frc-6901/robot-detail-2026.jpg" width="640" height="480" alt="Close-up inside the 2026 FRC robot showing rollers, drive components, wiring, and purple lighting" loading="lazy" decoding="async">
+                            </div>
+                            <figcaption>Internal rollers and drive components on the 2026 robot.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="project-content-grid project-content-grid--two">
+                        <article class="project-detail-card">
+                            <h3>Robot Software</h3>
+                            <p>Java and WPILib organized drivetrain and mechanism behavior, operator commands, closed-loop controls, telemetry, and competition-mode state.</p>
+                        </article>
+                        <article class="project-detail-card">
+                            <h3>Swerve &amp; Localization</h3>
+                            <p>Field-centric swerve used gyro heading and wheel feedback for intuitive driving. Odometry tracked robot pose for autonomous motion and repeatable field positioning.</p>
+                        </article>
+                        <article class="project-detail-card">
+                            <h3>Vision &amp; Autonomous</h3>
+                            <p>PhotonVision ran on an Orange Pi and supplied vision measurements. PathPlanner and pose data supported vision-assisted autonomous routines.</p>
+                        </article>
+                        <article class="project-detail-card">
+                            <h3>Controls &amp; Hardware</h3>
+                            <p>PID control, CTRE Phoenix 6 motor APIs, Kraken X60 motors, and the robot's CAN network connected high-level behavior to drivetrain and mechanism hardware.</p>
+                        </article>
+                        <article class="project-detail-card">
+                            <h3>Driver Integration</h3>
+                            <p>Software behavior was tuned around driver input, mechanism timing, sensor feedback, and the constraints found during practice and competition.</p>
+                        </article>
+                        <article class="project-detail-card">
+                            <h3>Autonomous Integration</h3>
+                            <p>Trajectory following, robot pose, mechanism commands, and vision updates were combined into autonomous sequences designed for field execution.</p>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -150,19 +166,27 @@
                     <p class="project-eyebrow">Debugging</p>
                     <h2 id="debugging-heading">Tracing failures across software and hardware</h2>
                 </div>
-                <div class="project-content-grid">
-                    <article class="project-detail-card">
-                        <h3>Elevator Encoder Conversion</h3>
-                        <p>An elevator began reporting incorrect position values. Reviewing Git history exposed an incorrect conversion constant, which connected the observed sensor behavior to the specific code change.</p>
-                    </article>
-                    <article class="project-detail-card">
-                        <h3>Pivot Mounting Failure</h3>
-                        <p>A pivot motor mounting failure during competition demonstrated that software behavior could not be separated from mechanical loading and mounting constraints. The response required cross-team diagnosis and decisions.</p>
-                    </article>
-                    <article class="project-detail-card">
-                        <h3>Competition Workflow</h3>
-                        <p>Logs, telemetry, code history, controlled tests, and direct coordination with mechanical and electrical members narrowed problems under limited practice and event time.</p>
-                    </article>
+                <div class="project-story-layout project-story-layout--media-right">
+                    <div class="project-content-grid project-content-grid--stack">
+                        <article class="project-detail-card">
+                            <h3>Elevator Encoder Conversion</h3>
+                            <p>An elevator began reporting incorrect position values. Reviewing Git history exposed an incorrect conversion constant, which connected the observed sensor behavior to the specific code change.</p>
+                        </article>
+                        <article class="project-detail-card">
+                            <h3>Pivot Mounting Failure</h3>
+                            <p>A pivot motor mounting failure during competition demonstrated that software behavior could not be separated from mechanical loading and mounting constraints. The response required cross-team diagnosis and decisions.</p>
+                        </article>
+                        <article class="project-detail-card">
+                            <h3>Competition Workflow</h3>
+                            <p>Logs, telemetry, code history, controlled tests, and direct coordination with mechanical and electrical members narrowed problems under limited practice and event time.</p>
+                        </article>
+                    </div>
+                    <figure class="project-media-card project-media-card--story">
+                        <div class="project-media-stage project-media-stage--landscape">
+                            <img src="/images/projects/frc-6901/competition.jpg" srcset="/images/projects/frc-6901/responsive/competition-640.jpg 640w, /images/projects/frc-6901/responsive/competition-1024.jpg 1024w, /images/projects/frc-6901/responsive/competition-1440.jpg 1440w" sizes="(max-width: 991px) calc(100vw - 3rem), 34rem" width="6000" height="4000" alt="FRC robots operating on a competition field during a match" loading="lazy" decoding="async">
+                        </div>
+                        <figcaption>Competition field during a 2026 match.</figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -172,6 +196,20 @@
                 <div class="project-section-heading">
                     <p class="project-eyebrow">Leadership</p>
                     <h2 id="leadership-heading">Building technical capacity across the team</h2>
+                </div>
+                <div class="project-leadership-media-grid">
+                    <figure class="project-media-card">
+                        <div class="project-media-stage project-media-stage--team">
+                            <img src="/images/projects/frc-6901/team-2024.jpg" srcset="/images/projects/frc-6901/responsive/team-2024-640.jpg 640w, /images/projects/frc-6901/responsive/team-2024-1024.jpg 1024w, /images/projects/frc-6901/responsive/team-2024-1440.jpg 1440w" sizes="(max-width: 991px) calc(100vw - 3rem), 44rem" width="4000" height="1848" alt="Knights Robotics team gathered for a group photo in 2024" loading="lazy" decoding="async">
+                        </div>
+                        <figcaption>Knights Robotics team photo from 2024.</figcaption>
+                    </figure>
+                    <figure class="project-media-card project-media-card--compact">
+                        <div class="project-media-stage project-media-stage--team-2026">
+                            <img src="/images/projects/frc-6901/team-2026.jpg" width="640" height="400" alt="Knights Robotics team gathered with medals and awards at a 2026 event" loading="lazy" decoding="async">
+                        </div>
+                        <figcaption>Knights Robotics team photo from a 2026 event.</figcaption>
+                    </figure>
                 </div>
                 <div class="project-content-grid">
                     <article class="project-detail-card">
@@ -190,30 +228,7 @@
             </div>
         </section>
 
-        <section class="project-detail-section section-dark" aria-labelledby="media-heading">
-            <div class="container">
-                <div class="project-section-heading">
-                    <p class="project-eyebrow">Media</p>
-                    <h2 id="media-heading">Controls integration and competition</h2>
-                </div>
-                <div class="project-media-grid">
-                    <figure class="project-media-card">
-                        <div class="project-media-stage">
-                            <img src="/images/projects/frc-6901/controls-integration.jpg" width="1584" height="2112" alt="FRC Team 6901 robot beside a laptop during software and controls integration" loading="lazy" decoding="async">
-                        </div>
-                        <figcaption>Software and controls integration beside the robot.</figcaption>
-                    </figure>
-                    <figure class="project-media-card">
-                        <div class="project-media-stage">
-                            <img src="/images/projects/frc-6901/competition.jpg" width="6000" height="4000" alt="FRC robots operating on a competition field during a match" loading="lazy" decoding="async">
-                        </div>
-                        <figcaption>Competition field during a 2026 match.</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <section class="project-detail-section" aria-labelledby="results-heading">
+        <section class="project-detail-section section-dark" aria-labelledby="results-heading">
             <div class="container">
                 <div class="project-status-callout">
                     <p class="project-eyebrow">Results</p>
